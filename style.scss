@@ -1,0 +1,53 @@
+// @import url("./shared.scss");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+.mainscreen {
+  height: 100vh;
+}
+.main-menu {
+  height: 90%;
+}
+
+.leftmenu {
+  width: 25%;
+  color: rgb(61, 62, 62);
+  height: 97%;
+}
+.leftmenu--top {
+  height: 15%;
+}
+.player {
+  height: 10%;
+}
+.topbar--chips {
+  height: fit-content;
+  padding: 6px;
+  gap: 2%;
+}
+
+.top--bar--inner {
+  align-items: center;
+  gap: 5px;
+}
+.leftmenu--bottom---music {
+  height: 70%;
+  overflow-y: scroll;
+
+  /* Customize scrollbar appearance (browser-specific) */
+  ::-webkit-scrollbar {
+    width: 5px; /* Adjust scrollbar width */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #ddd; /* Set track color */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #555; /* Set thumb color */
+  }
+}

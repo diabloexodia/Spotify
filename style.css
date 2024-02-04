@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+
+.mainscreen {
+  height: 100vh;
+}
+
+.main-menu {
+  height: 90%;
+}
+
+.leftmenu {
+  width: 25%;
+  color: rgb(61, 62, 62);
+  height: 97%;
+}
+
+.leftmenu--top {
+  height: 15%;
+}
+
+.player {
+  height: 10%;
+}
+
+.topbar--chips {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 6px;
+  gap: 2%;
+}
+
+.top--bar--inner {
+  align-items: center;
+  gap: 5px;
+}
+
+.leftmenu--bottom---music {
+  height: 70%;
+  overflow-y: scroll;
+  /* Customize scrollbar appearance (browser-specific) */
+}
+.leftmenu--bottom---music ::-webkit-scrollbar {
+  width: 5px; /* Adjust scrollbar width */
+}
+.leftmenu--bottom---music ::-webkit-scrollbar-track {
+  background-color: #ddd; /* Set track color */
+}
+.leftmenu--bottom---music ::-webkit-scrollbar-thumb {
+  background-color: #555; /* Set thumb color */
+}/*# sourceMappingURL=style.css.map */
