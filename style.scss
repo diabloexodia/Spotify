@@ -29,7 +29,7 @@
   height: 25%;
 }
 .player {
-  height: 10%;
+  height: 100vh;
 }
 .topbar--chips {
   height: fit-content;
@@ -147,3 +147,46 @@ background: linear-gradient(to right, #800080, #452c63);
 //   overflow-x: scroll;
   
 // }
+
+.timeline-slider{
+  width: 40vw;
+  
+}
+.timeline-slider::-webkit-slider-runnable-track,
+.volume-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #ddd;
+  border: none;
+  border-radius: 100px;
+}
+ 
+.timeline-slider::-webkit-slider-thumb,
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #6bc15c;
+  margin-top: -6px;
+}
+ 
+
+.timeline-slider:focus,
+.volume-slider:focus {
+  outline: none;
+}
+ 
+.timeline-slider:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+ 
+
+.timeline-slider:hover, .volume-slider:hover {
+  background-color: blue;
+}
+ 
+.timeline-slider, .volume-slider {
+  -webkit-appearance: none;
+}
+ 
