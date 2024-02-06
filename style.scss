@@ -42,7 +42,8 @@
   gap: 5px;
 }
 .leftmenu--bottom---music {
-  height:70%;
+  height:55vh;
+  margin-top: 5%;
   overflow-y: scroll;
 
   &::-webkit-scrollbar {
@@ -50,12 +51,12 @@
   }
 
   &::-webkit-scrollbar-track {
-    background-color: #d1c0c0; // Set track color
+    background-color: rgb(9, 255, 83,0.5); // Set track color
     border-radius: 10px; // Make scrollbar rounded
   }
 
   &::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(136,153,166,1) 0%, rgba(76,86,106,1) 100%); // Set gradient color for the thumb
+    background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgba(76,86,106,1) 100%); // Set gradient color for the thumb
     border-radius: 10px; // Make scrollbar rounded
     box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5); // Add an shadow to the thumb
   }
@@ -66,7 +67,7 @@
 }
 
 .audio-player-container {
-  background-color: green;
+
   position: relative;
 }
 .player--mid{
@@ -77,7 +78,72 @@
   height: 100%;
 }
 .rightmenu--topbar{
-height: 50%;
+height: 40%;
 // border: 1px solid red;
 background: linear-gradient(to right, #800080, #452c63);
 }
+
+
+.volume{
+  border-radius: 100%;
+  height: 25px;
+  padding: 0;
+  display: flex;
+  align-self: center;
+  width: 25px;
+  &:hover{
+    
+      // width: 1rem;
+      background-color: rgb(77, 11, 97);
+    
+  }
+}
+
+
+
+.rightmenu--musiclist-top{
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    width: fit-content;// Adjust scrollbar width
+    height: 70%;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgb(9, 255, 83,0.5); // Set track color
+    border-radius: 10px; // Make scrollbar rounded
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgba(76,86,106,1) 100%); // Set gradient color for the thumb
+    border-radius: 10px; // Make scrollbar rounded
+    box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5); // Add an shadow to the thumb
+  }
+}
+.rightmenu--musiclist-bottom{
+  
+  &::-webkit-scrollbar {
+    width: fit-content;// Adjust scrollbar width
+    height: 0.7rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgb(9, 255, 83,0.5); // Set track color
+    border-radius: 10px; // Make scrollbar rounded
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgba(76,86,106,1) 100%); // Set gradient color for the thumb
+    border-radius: 10px; // Make scrollbar rounded
+    box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5); // Add an shadow to the thumb
+  }
+}
+.album-cover{
+  
+ width: 12rem;
+ height: 12rem;
+}
+
+// .albums{
+//   overflow-x: scroll;
+  
+// }

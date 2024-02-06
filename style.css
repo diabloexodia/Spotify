@@ -47,18 +47,19 @@
 }
 
 .leftmenu--bottom---music {
-  height: 70%;
+  height: 55vh;
+  margin-top: 5%;
   overflow-y: scroll;
 }
 .leftmenu--bottom---music::-webkit-scrollbar {
   width: 0.7rem;
 }
 .leftmenu--bottom---music::-webkit-scrollbar-track {
-  background-color: #d1c0c0;
+  background-color: rgba(9, 255, 83, 0.5);
   border-radius: 10px;
 }
 .leftmenu--bottom---music::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgb(136, 153, 166) 0%, rgb(76, 86, 106) 100%);
+  background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgb(76, 86, 106) 100%);
   border-radius: 10px;
   box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5);
 }
@@ -68,7 +69,6 @@
 }
 
 .audio-player-container {
-  background-color: green;
   position: relative;
 }
 
@@ -82,6 +82,54 @@
 }
 
 .rightmenu--topbar {
-  height: 50%;
+  height: 40%;
   background: linear-gradient(to right, #800080, #452c63);
+}
+
+.volume {
+  border-radius: 100%;
+  height: 25px;
+  padding: 0;
+  display: flex;
+  align-self: center;
+  width: 25px;
+}
+.volume:hover {
+  background-color: rgb(77, 11, 97);
+}
+
+.rightmenu--musiclist-top {
+  overflow-x: scroll;
+}
+.rightmenu--musiclist-top::-webkit-scrollbar {
+  width: fit-content;
+  height: 70%;
+}
+.rightmenu--musiclist-top::-webkit-scrollbar-track {
+  background-color: rgba(9, 255, 83, 0.5);
+  border-radius: 10px;
+}
+.rightmenu--musiclist-top::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgb(76, 86, 106) 100%);
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5);
+}
+
+.rightmenu--musiclist-bottom::-webkit-scrollbar {
+  width: fit-content;
+  height: 0.7rem;
+}
+.rightmenu--musiclist-bottom::-webkit-scrollbar-track {
+  background-color: rgba(9, 255, 83, 0.5);
+  border-radius: 10px;
+}
+.rightmenu--musiclist-bottom::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgb(76, 86, 106) 100%);
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5);
+}
+
+.album-cover {
+  width: 12rem;
+  height: 12rem;
 }/*# sourceMappingURL=style.css.map */
