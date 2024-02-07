@@ -6,15 +6,18 @@
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
 }
+
 .mainscreen {
   height: 100vh;
 }
+
 .main-menu {
   height: 92%;
 }
-.spotify-logo{
+
+.spotify-logo {
   border-radius: 5px;
-  width:50%;
+  width: 50%;
   padding-right: 10px;
 
   gap: 2px;
@@ -25,26 +28,34 @@
   color: rgb(156, 156, 156);
   height: 45%;
 }
+
 .leftmenu--top {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
+
 .player {
   // height: 100vh;
 }
+
 .topbar--chips {
   height: fit-content;
   padding: 6px;
-  gap: 2.5%;
+  gap: 15%;
+}
+
+.gp-2 {
+  gap: 20px;
 }
 
 .top--bar--inner {
   align-items: center;
-  gap: 5px;
+  gap: 15%;
 }
+
 .leftmenu--bottom---music {
-  height: 45vh;
+  height: 50vh;
   margin-top: 5%;
   overflow-y: scroll;
 
@@ -53,18 +64,18 @@
   }
 
   &::-webkit-scrollbar-track {
-    background-color: rgb(9, 255, 83,0.5); // Set track color
+    background-color: rgb(9, 255, 83, 0.5); // Set track color
     border-radius: 10px; // Make scrollbar rounded
   }
 
   &::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgba(76,86,106,1) 100%); // Set gradient color for the thumb
+    background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgba(76, 86, 106, 1) 100%); // Set gradient color for the thumb
     border-radius: 10px; // Make scrollbar rounded
     box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5); // Add an shadow to the thumb
   }
 }
 
-.player{
+.player {
   justify-content: space-between;
 }
 
@@ -72,88 +83,114 @@
 
   position: relative;
 }
-.player--mid{
+
+.player--mid {
   width: 30%;
 }
-.rightmenu{
+
+.rightmenu {
   width: 75%;
-  height: 100%;
+  gap: 2%;
+  height: 99%;
 }
-.rightmenu--topbar{
-height: 40%;
-// border: 1px solid red;
-background: linear-gradient(to right, #800080, #452c63);
+
+.rightmenu--topbar {
+  height: 53%;
+  // border: 1px solid red;
+  background: linear-gradient(to right, #800080, #452c63);
 }
 
 
-.volume{
+.volume {
   border-radius: 100%;
   height: 25px;
   padding: 0;
   display: flex;
   align-self: center;
   width: 25px;
-  &:hover{
-    
-      // width: 1rem;
-      background-color: rgb(77, 11, 97);
-    
+
+  &:hover {
+
+    // width: 1rem;
+    background-color: rgb(77, 11, 97);
+
   }
 }
 
 
 
-.rightmenu--musiclist-top{
+.rightmenu--musiclist-top {
   overflow-x: scroll;
+
   &::-webkit-scrollbar {
-    width: fit-content;// Adjust scrollbar width
+    width: fit-content; // Adjust scrollbar width
     height: 70%;
   }
 
   &::-webkit-scrollbar-track {
-    background-color: rgb(9, 255, 83,0.5); // Set track color
+    background-color: rgb(9, 255, 83, 0.5); // Set track color
     border-radius: 10px; // Make scrollbar rounded
   }
 
   &::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgba(76,86,106,1) 100%); // Set gradient color for the thumb
+    background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgba(76, 86, 106, 1) 100%); // Set gradient color for the thumb
     border-radius: 10px; // Make scrollbar rounded
     box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5); // Add an shadow to the thumb
   }
 }
-.rightmenu--musiclist-bottom{
-  
+
+.rightmenu--musiclist-bottom {
+
   &::-webkit-scrollbar {
-    width: fit-content;// Adjust scrollbar width
+    width: fit-content; // Adjust scrollbar width
     height: 0.7rem;
   }
 
   &::-webkit-scrollbar-track {
-    background-color: rgb(9, 255, 83,0.5); // Set track color
+    background-color: rgb(9, 255, 83, 0.5); // Set track color
     border-radius: 10px; // Make scrollbar rounded
   }
 
   &::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgba(76,86,106,1) 100%); // Set gradient color for the thumb
+    background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgba(76, 86, 106, 1) 100%); // Set gradient color for the thumb
     border-radius: 10px; // Make scrollbar rounded
     box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5); // Add an shadow to the thumb
   }
 }
-.album-cover{
-  
- width: 12rem;
- height: 12rem;
+
+.album-cover {
+
+  width: 12rem;
+  height: 12rem;
 }
 
-// .albums{
-//   overflow-x: scroll;
-  
-// }
+.albums {
+  overflow-x: scroll;
+  gap: 3%;
+  height: 70%;
 
-.timeline-slider{
+  &::-webkit-scrollbar {
+    // width: 70%;// Adjust scrollbar width
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgb(9, 255, 83, 0.5); // Set track color
+    border-radius: 10px; // Make scrollbar rounded
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgb(70, 70, 87) 0%, rgba(76, 86, 106, 1) 100%); // Set gradient color for the thumb
+    border-radius: 10px; // Make scrollbar rounded
+    box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5); // Add an shadow to the thumb
+  }
+}
+
+.timeline-slider {
   width: 40vw;
-  
+
 }
+
 .timeline-slider::-webkit-slider-runnable-track,
 .volume-slider::-webkit-slider-runnable-track {
   height: 4px;
@@ -161,7 +198,7 @@ background: linear-gradient(to right, #800080, #452c63);
   border: none;
   border-radius: 100px;
 }
- 
+
 .timeline-slider::-webkit-slider-thumb,
 .volume-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -172,23 +209,24 @@ background: linear-gradient(to right, #800080, #452c63);
   background: #6bc15c;
   margin-top: -6px;
 }
- 
+
 
 .timeline-slider:focus,
 .volume-slider:focus {
   outline: none;
 }
- 
+
 .timeline-slider:focus::-webkit-slider-runnable-track {
   background: #ccc;
 }
- 
 
-.timeline-slider:hover, .volume-slider:hover {
+
+.timeline-slider:hover,
+.volume-slider:hover {
   background-color: blue;
 }
- 
-.timeline-slider, .volume-slider {
+
+.timeline-slider,
+.volume-slider {
   -webkit-appearance: none;
 }
- 

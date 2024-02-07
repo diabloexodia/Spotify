@@ -36,16 +36,20 @@
   height: -moz-fit-content;
   height: fit-content;
   padding: 6px;
-  gap: 2.5%;
+  gap: 15%;
+}
+
+.gp-2 {
+  gap: 20px;
 }
 
 .top--bar--inner {
   align-items: center;
-  gap: 5px;
+  gap: 15%;
 }
 
 .leftmenu--bottom---music {
-  height: 45vh;
+  height: 50vh;
   margin-top: 5%;
   overflow-y: scroll;
 }
@@ -76,11 +80,12 @@
 
 .rightmenu {
   width: 75%;
-  height: 100%;
+  gap: 2%;
+  height: 99%;
 }
 
 .rightmenu--topbar {
-  height: 40%;
+  height: 53%;
   background: linear-gradient(to right, #800080, #452c63);
 }
 
@@ -132,6 +137,24 @@
   height: 12rem;
 }
 
+.albums {
+  overflow-x: scroll;
+  gap: 3%;
+  height: 70%;
+}
+.albums::-webkit-scrollbar {
+  height: 10px;
+}
+.albums::-webkit-scrollbar-track {
+  background-color: rgba(9, 255, 83, 0.5);
+  border-radius: 10px;
+}
+.albums::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(70, 70, 87) 0%, rgb(76, 86, 106) 100%);
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5);
+}
+
 .timeline-slider {
   width: 40vw;
 }
@@ -164,10 +187,12 @@
   background: #ccc;
 }
 
-.timeline-slider:hover, .volume-slider:hover {
+.timeline-slider:hover,
+.volume-slider:hover {
   background-color: blue;
 }
 
-.timeline-slider, .volume-slider {
+.timeline-slider,
+.volume-slider {
   -webkit-appearance: none;
 }/*# sourceMappingURL=style.css.map */
