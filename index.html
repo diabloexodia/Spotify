@@ -25,7 +25,7 @@
                         <span class="material-symbols-outlined ">home</span>
                         <span class=" flex align-items">Home </span>
                     </div>
-                    <div class="h-50 flex pt-4 pb-6 ">
+                    <div class="h-50 flex pt-4  ">
                         <span class="material-symbols-outlined ">search</span>
                         <span class=" flex align-items">Search</span>
                     </div>
@@ -49,6 +49,7 @@
                                 class="w-20  flex justify-c chips pd-4">Albums</span><span
                                 class="w-20 justify-c  flex chips pd-4">Artists</span>
                         </div>
+                        <div name="topbar--search">
                         <span class="material-symbols-outlined  ">
                             search
                         </span>
@@ -58,7 +59,7 @@
                                 list
                             </span>
                         </div>
-
+                    </div>
                     </div>
                     <div class="leftmenu--bottom---music pt-4 ">
 
@@ -235,7 +236,7 @@
         </div>
         <div class="player flex align-items sp-b">
             <div class="player--left "><span class="material-symbols-outlined">
-                favorite
+                    favorite
                 </span></div>
             <div class="player--mid flex-col ">
                 <div class="mid--top flex sp-b">
@@ -254,36 +255,29 @@
                     <span class="material-symbols-outlined">
                         shuffle
                     </span>
-                  
-                    </div>
-                    <div class="player-timeline align-items flex align-items">
-                        <span class="current-time fs">0:00</span>
-                        <input
-                          type="range"
-                          class="timeline-slider"
-                          min="0"
-                          max="100"
-                          step="1"
-                          value="0"
-                        />
-                        <span class="total-time fs">0:00</span>
-                      </div>
-                </div>
-                <div class="player--right flex  ">
-                    <span class="material-symbols-outlined">
-                        media_output
-                    </span>
-                    <span class="material-symbols-outlined">
-                        speaker_group
-                    </span>
-                </div>
-            
 
                 </div>
+                <div class="player-timeline align-items flex align-items">
+                    <span class="current-time fs">0:00</span>
+                    <input type="range" class="timeline-slider" min="0" max="100" step="1" value="0" />
+                    <span class="total-time fs">0:00</span>
+                </div>
+            </div>
+            <div class="player--right flex  ">
+                <span class="material-symbols-outlined">
+                    media_output
+                </span>
+                <span class="material-symbols-outlined">
+                    speaker_group
+                </span>
+            </div>
 
-              
-           
+
         </div>
+
+
+
+    </div>
     </div>
 </body>
 

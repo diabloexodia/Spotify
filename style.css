@@ -27,11 +27,9 @@
 }
 
 .leftmenu--top {
-  height: 25%;
-}
-
-.player {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .topbar--chips {
@@ -47,7 +45,7 @@
 }
 
 .leftmenu--bottom---music {
-  height: 55vh;
+  height: 45vh;
   margin-top: 5%;
   overflow-y: scroll;
 }
